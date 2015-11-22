@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <!-- saved from url=(0038)http://pixelcog.github.io/parallax.js/ -->
-<html lang="en" hola_ext_inject="inited"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en" hola_ext_inject="inited">
+<head>
+
+
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,16 +33,76 @@
       });
     </script>
     <script src="./Parallax.js _ Simple Parallax Scrolling Effect with jQuery_files/parallax.min.js"></script>
+
+
+    <style> 
+
+    /* Float */
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(10, 20, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.5s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  transform: translateY(-8px);
+}
+
+    h1 {
+      color: rgb(115,73,65);
+      font-family: 'Pacifico';
+      font-size: 60px;
+      padding-bottom: 10px;
+
+    }
+    a {
+      color: rgb(115,73,65);
+    }
+    ul {
+  text-align: center;
+  padding: 10px;
+}
+li {
+  display: inline;
+  font-family: 'Pacifico';
+   border-radius: 25px;
+    border: 2px solid #6effac;
+    padding: 5px 10px 10px 10px; 
+    width: 100px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #6effac;
+
+}
+
+
+
+}
+
+    </style> 
+
+
   </head>
   <body data-pinterest-extension-installed="cr1.39.1"><div class="parallax-mirror" style="z-index: -100; position: fixed; overflow: hidden; transform: translate3d(0px, 0px, 0px); visibility: hidden; top: 1928px; left: 0px; height: 674px; width: 1903px;"><img class="parallax-slider" src="./Parallax.js _ Simple Parallax Scrolling Effect with jQuery_files/Strawberry-rhubarb_pie_1400x900.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -2018.4px; left: 0px; height: 1935px; width: 1903px; max-width: none;"></div><div class="parallax-mirror" style="z-index: -100; position: fixed; overflow: hidden; transform: translate3d(0px, 0px, 0px); visibility: hidden; top: 1274px; left: 0px; height: 674px; width: 1903px;"><img class="parallax-slider" src="./Parallax.js _ Simple Parallax Scrolling Effect with jQuery_files/Sugar_cookie1400x900.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -1189.2px; left: 0px; height: 1223px; width: 1903px; max-width: none;"></div><div class="parallax-mirror" style="z-index: -100; position: fixed; overflow: hidden; transform: translate3d(0px, 0px, 0px); visibility: visible; top: -191px; left: 0px; height: 674px; width: 1903px;"><img class="parallax-slider" src="./Parallax.js _ Simple Parallax Scrolling Effect with jQuery_files/laceB1.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -357.2px; left: 0px; height: 1903px; width: 1903px; max-width: none;"></div><div class="parallax-mirror" style="z-index: -100; position: fixed; overflow: hidden; transform: translate3d(0px, 0px, 0px); visibility: hidden; top: -1617px; left: 0px; height: 674px; width: 1903px;"><img class="parallax-slider" src="./Parallax.js _ Simple Parallax Scrolling Effect with jQuery_files/Cupcakes1.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: 1293.6px; left: 0px; height: 1223px; width: 1903px; max-width: none;"></div>
     <section>
       <div class="container">
         <div id="ios-notice" class="alert alert-info hidden"><p><strong>Notice:</strong> Hello mobile user! Scrolling will be stationary on mobile devices</p></div>
         <h1>Cakes Sugar Sprinkles <small>(C. S. S.)</small></h1>
-        <p>cake cake cake blah blah blah</p>
-        <a href="https://github.com/pixelcog/parallax.js/archive/v1.3.1.zip" class="btn btn-default download-link">Make this a link to section 1: CAKE</a>
-        <a href="https://github.com/pixelcog/parallax.js/" class="btn btn-default">Same here: BISCUITS</a>
-        <a href="https://github.com/pixelcog/parallax.js/" class="btn btn-default">Same here: PUDDINGS</a>
+        <div id="buttons">
+          <ul> 
+            <li><a href="#" class="button hvr-float">Cakes</a></li> 
+            <li><a href="#" class="button hvr-float">Biscuits</a></li> 
+            <li><a href="#" class="button hvr-float">Puddings</a></li>
+          </ul> 
       </div>
     </section>
 
@@ -263,7 +328,7 @@
 
     <footer>
       <div class="container">
-        Parallax.js © 2015 <a href="http://pixelcog.com/">PixelCog Inc.</a> released under <a href="https://github.com/pixelcog/parallax.js/blob/master/LICENSE">MIT license</a><br>
+        <a href="http://pixelcog.com/">PixelCog Inc.</a> released under <a href="https://github.com/pixelcog/parallax.js/blob/master/LICENSE">MIT license</a><br>
         All images taken from NASA are <a href="http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html#.U454_JRdXls">public domain</a>.<br><br>
         <iframe src="./Parallax.js _ Simple Parallax Scrolling Effect with jQuery_files/github-btn(1).html" allowtransparency="true" frameborder="0" scrolling="0" width="85" height="20"></iframe>
         <iframe src="./Parallax.js _ Simple Parallax Scrolling Effect with jQuery_files/github-btn.html" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
